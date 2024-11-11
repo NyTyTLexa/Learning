@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автобиография</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body style="margin: 0;">
+    <header style="height: 30px;background-color: #3c4c9a ; padding-left: 0;padding-right: 0;"></header>
+    <main style="padding-left: 25%;height: 2500px; background-color: #93a5e1;  padding-right: 25%">
+        <img src="Image/MyPhoto.jpeg" style="width: 50%; padding-left: 25%;padding-right: 25%; border-radius: 29%; padding-bottom: 0;" alt="Моя фотография">
+        <ul id="DropDown">
+            <span>Мои лучшие качества</span>
+            <button onclick="toggleCharacteristics()">Показать/Скрыть</button>
+            <ul id="characteristics-list" style="display: none;">
+              <li>Целеустремленность</li>
+              <li>Знание C#</li>
+              <li>Коммуникабельность</li>
+              <li>Креативность</li>
+              <li>Уверенность</li>
+            </ul>
+          </ul>
+          
+    </main>
+    <footer style="background-color: #3c4c9a; height: 10%; display: flex; padding-top: 0; padding-left: 35%; padding-right: 20%;">
+        <button><a href="https://vk.com/nytytlexa">Написать</a></button>
+        <button><a href="https://vk.com/nytytlexa">Позвонить</a></button>
+        <button><a href="https://vk.com/nytytlexa">Оставить предложение о работе</a></button>
+    </footer>
+</body>
+</html>
+<script>
+  function toggleCharacteristics() {
+    var list = document.getElementById("characteristics-list");
+    if (list.style.display === "none") {
+      list.style.display = "block";
+    } else {
+      list.style.display = "none";
+    }
+  }
+</script>
+		
