@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="/">Задачник</a>
+        </div>
+        <div class="header-right">
+            <span id="displayUsername"></span>
+            <button id="editUser" onclick="openModal()">⚙️ Настройки</button>
+        </div>
+    </header>
+    <main>
+        <div class="toolbar">
+            <input type="text" id="newtask" placeholder="Введите новую задачу">
+            <button id="addtask" onclick="addNewTask()">Добавить задачу</button>
+        </div>
+        <ul class="tasklist" id="tasklist">
+            <!-- Tasks will be appended here by JavaScript -->
+        </ul>
+    </main>
+    <div id="userModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Редактировать имя пользователя</h2>
+            <input type="text" id="editUsername" placeholder="Новое имя пользователя">
+            <button onclick="updateUserName()">Сохранить</button>
+            <button onclick="deleteUserName()">Удалить</button>
+        </div>
+    </div>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>
